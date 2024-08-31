@@ -1,0 +1,667 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #ccc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header .header-left .icon {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .header-right {
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9acd32; /* Verde claro */
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e3e4e9;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logo-whatsapp {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.services {
+    padding: 40px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.service-item {
+    display: inline-block;
+    width: 30%;
+    margin: 0 1.5%;
+    vertical-align: top;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-img {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bio-text {
+    flex: 1;
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.bio-photo {
+    flex: 1;
+}
+
+.photo-large {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.additional-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.additional-photo {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.photo-small {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.additional-text {
+    flex: 2;
+}
+
+.extra-info {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.extra-text {
+    flex: 2;
+}
+
+.extra-photo {
+    flex: 1;
+    margin-left: 20px; /* Ajustado para mover a foto para a direita */
+}
+
+.whatsapp-button-large {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #25D366;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.whatsapp-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.location-contact {
+    padding: 40px 20px;
+    background-color: #e3e4e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Alinha o conteúdo no topo */
+}
+
+
+
+.about {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.about-main, .additional-info, .extra-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh; /* Cada seção ocupa toda a tela */
+}
+
+.bio-photo img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Garante que a imagem ocupe todo o espaço */
+}
+
+.additional-info, .extra-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Cada seção ocupa toda a tela */
+}
+
+.additional-info .additional-photo, .extra-info .extra-photo {
+    margin-right: 20px;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.additional-info .additional-text, .extra-info .extra-text {
+    max-width: 600px;
+    text-align: left;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #e3e4e9; /* Mesma cor da página inicial */
+}
+
+header {
+    background-color: #ccc;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+header .header-left .icon {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+header .header-right {
+    font-weight: bold;
+}
+
+nav {
+    background-color: #444;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #9acd32; /* Verde claro */
+}
+
+.hero {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e3e4e9;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.logo-whatsapp {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.logo {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.whatsapp-description {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.section-divider {
+    width: 100px;
+    height: 4px;
+    background-color: #000;
+    margin: 0 auto 20px;
+}
+
+.help-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 20px;
+    height: 100vh;
+}
+
+.help-section .help-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.help-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.help-section p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.help-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.help-section ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.help-section ul li:before {
+    content: '\2192'; /* Flecha */
+    position: absolute;
+    left: 0;
+    color: #9acd32; /* Verde claro */
+}
+
+.help-section .help-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.help-section .help-image {
+    flex: 1;
+    max-width: 500px;
+}
+
+.help-section .help-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.about-section {
+    background-color: #4b3621; /* Fundo marrom */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    height: 100vh;
+    position: relative;
+}
+
+.about-section .about-image {
+    flex: 1;
+    position: relative;
+    left: -100px; /* Parte maior da imagem fora do quadrado marrom */
+    height: 80%; /* Ocupa a maior parte da altura */
+}
+
+.about-section .about-image img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.about-section .about-text {
+    flex: 2;
+    padding-left: 60px;
+    position: relative;
+    z-index: 1; /* Certificar que o texto fica acima da imagem */
+}
+
+.about-section .about-text h2 {
+    font-size: 28px; /* Tamanho menor do título */
+    font-family: 'Playfair Display', serif; /* Fonte chique */
+    color: #ffd700; /* Moldura dourada */
+    border: 4px solid #ffd700;
+    padding: 5px 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.about-section .lawyer-name {
+    font-size: 36px; /* Nome do advogado maior */
+    font-family: 'Playfair Display', serif; /* Fonte chique */
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.about-section .about-text p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.about-section .about-text {
+    text-align: justify;
+}
+
+.about-section .whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: white;
+    padding: 8px 16px; /* Botão menor */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1; /* Certificar que o botão fica acima da imagem */
+    position: absolute;
+    left: 0; /* Alinhado à esquerda do texto */
+}
+
+.about-section .whatsapp-button img {
+    width: 16px; /* Reduzindo o tamanho do ícone */
+    margin-right: 8px;
+}
+
+.about-section img.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+.choose-us {
+    padding: 40px 20px;
+    background-color: #e3e4e9;
+    text-align: center;
+    width: 100%; /* Garante que a seção ocupe toda a largura da página */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+.section-divider {
+    width: 100px;
+    height: 4px;
+    background-color: #000;
+    margin: 0 auto 20px;
+}
+
+.choose-us h2 {
+    font-size: 36px; /* Aumenta o tamanho do título */
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Fonte opcional */
+}
+
+.choose-us-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dois itens por linha */
+    gap: 30px; /* Espaço entre os itens */
+    justify-content: center; /* Centraliza os itens na linha */
+    max-width: 1200px; /* Ajusta a largura máxima da seção para garantir um layout responsivo */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.choose-us-item {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 30px; /* Aumenta o padding para maior tamanho */
+    width: 100%; /* Ocupa toda a largura da célula */
+    max-width: 400px; /* Aumenta o tamanho máximo */
+    text-align: center;
+    box-sizing: border-box; /* Inclui o padding e border no tamanho total */
+    background-color: #e3e4e9; /* Cor de fundo clara para contraste */
+}
+
+.choose-us-item .icon {
+    margin-bottom: 15px;
+}
+
+.choose-us-item .icon img {
+    width: 80px; /* Aumenta o tamanho do ícone */
+    height: 80px;
+}
+
+.choose-us-item .divider {
+    width: 80px; /* Aumenta a largura da divisória dourada */
+    height: 4px;
+    background-color: #ffd700; /* Dourado */
+    margin: 15px auto;
+}
+
+.choose-us-item p {
+    font-size: 20px; /* Aumenta o tamanho do texto */
+    margin: 0;
+}
+
+/* Ajusta a posição dos itens da direita */
+.choose-us-content .choose-us-item:nth-child(2),
+.choose-us-content .choose-us-item:nth-child(4) {
+    margin-left: auto;
+}
+.coverage-section {
+    background-color: #4b3621; /* Fundo marrom */
+    color: #fff; /* Texto branco para contraste */
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Ocupa toda a altura da tela */
+    box-sizing: border-box;
+}
+
+.coverage-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px; /* Largura máxima para centralizar o conteúdo */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.coverage-map {
+    flex: 1;
+    max-width: 500px; /* Limita a largura do mapa */
+}
+
+.coverage-map img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+}
+
+.coverage-text {
+    flex: 1;
+    padding-left: 40px; /* Espaço entre o mapa e o texto */
+}
+
+.coverage-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; /* Fonte opcional */
+}
+
+.coverage-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #25D366; /* Verde do WhatsApp */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #1da851; /* Tom mais escuro de verde no hover */
+}
+.choose-us {
+    background-color: #e3e4e9; /* Cor cinza semelhante à da página inicial */
+    padding: 40px 20px;
+    min-height: 100vh; /* Garante que a seção ocupe toda a altura da tela */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.choose-us-content {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+    justify-content: space-between; /* Espaça igualmente os itens */
+    width: 100%; /* Garante que a largura dos itens seja ajustada */
+    max-width: 1200px; /* Define a largura máxima para o conteúdo */
+}
+
+.choose-us-item {
+    flex: 1 1 calc(50% - 40px); /* Faz com que cada item ocupe 50% da largura disponível menos a margem */
+    margin: 20px; /* Espaço ao redor de cada item */
+    background-color: #fff; /* Fundo branco para os itens */
+    border: 2px solid #000; /* Borda preta ao redor dos itens */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adiciona sombra sutil aos itens */
+    text-align: center; /* Centraliza o texto */
+    position: relative; /* Necessário para posicionar a linha dourada */
+    min-width: 250px; /* Define uma largura mínima para os itens */
+}
